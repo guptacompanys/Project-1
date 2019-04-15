@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Welcome Farmers!</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="profile.html">Welcome<span class="logo_colour"> Farmers!</span></a></h1>
+          <h2>FarmerVarmer at your Service!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="profile.html">Home</a></li>
+          <li><a href="crop.html">Crops</a></li>
+          <li class="selected"><a href="tools.html">Request a Tool</a></li>
+          <li><a href="orders.jsp">Orders and Earnings</a></li>
+          <li><a href="index.html">log Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Latest News</h3>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="http://rural.nic.in/">Ministry of Rural Development</a></li>
+          <li><a href="http://www.mca.gov.in/">Ministry of Corporate Affairs</a></li>
+          <li><a href="http://pmkvyofficial.org/">PMKVY</a></li>
+          <li><a href="http://agriculture.gov.in/">Ministry of Agriculture</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="search.jsp" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="" />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Select a Tool You Want to Possess for Farming!</h1>
+        <p>FarmerVarmer provides sophisticated farming tools to our farmers on nominal rent. Just select a tool and click on the request option. The tool will be
+        delivered at your doorstep for free!</p>
+
+      </div>
+      <span class="center"><img src="style/graphic.png"/></span>
+    
+<div id="content">
+
+        
+        <h2>Available Farming Tool</h2>
+        <p>The Tools will be delivered at your doorsteps by our Executives!</p>
+        <table style="width:100%; border-spacing:0;">
+          <tr><th>Tool</th><th>Charges per Month</th></tr>
+          <tr><td>Tractor</td><td>Rs. 7000</td></tr>
+          <tr><td>Jet Pump</td><td>Rs. 5300</td></tr>
+          <tr><td>Chisel Plow</td><td>Rs. 1200</td></tr>
+          <tr><td>Harrow</td><td>Rs. 2800</td></tr>
+          <tr><td>Subsoiler</td><td>Rs. 456</td></tr>
+          <tr><td>Rotator</td><td>Rs. 533</td></tr>
+          <tr><td>Roller</td><td>Rs. 1349</td></tr>
+          <tr><td>Stone Picker</td><td>Rs. 300</td></tr>
+          <tr><td>Sprayer</td><td>Rs. 155</td></tr>
+          <tr><td>Seed Drill</td><td>Rs. 1200</td></tr>
+        </table>
+        <h2>Request a Tool Now!</h2>
+        <form action="tools.jsp" method="post">
+          <div class="form_settings">
+            <p><span>Name of the Tool</span><select id="id" name="name"><option value="Tractor">Tractor</option><option value="Jet Pump">Jet Pump</option><option value="Chisel Plow">Chisel Plow</option><option value="Harrow">Harrow</option><option value="Subsoiler">Subsoiler</option><option value="Rotator">Rotator</option><option value="Roller">Roller</option><option value="Stone Picker">Stone Picker</option><option value="Sprayer">Sprayer</option><option value="Seed Drill">Seed Drill</option></select></p>
+            <p><span>Duration in Months</span><input type="text" name="duration"/></p>
+            <p><span>Delivery Address</span><textarea rows="8" cols="50" name="delivery"></textarea></p>
+            <p><span>Accept Risk Coverage</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="Request Now" /></p>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+
+
+    
+    <div id="footer">
+      Copyright Cetpa Infotech Pvt. Ltd.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Welcome Farmers!</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="profile.html">Welcome<span class="logo_colour"> Farmers!</span></a></h1>
+          <h2>FarmerVarmer at your Service!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="profile.html">Home</a></li>
+          <li class="selected"><a href="crop.html">Crops</a></li>
+          <li><a href="tools.html">Request a Tool</a></li>
+          <li><a href="orders.jsp">Orders and Earnings</a></li>
+          <li><a href="index.html">log Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Latest News</h3>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="http://rural.nic.in/">Ministry of Rural Development</a></li>
+          <li><a href="http://www.mca.gov.in/">Ministry of Corporate Affairs</a></li>
+          <li><a href="http://pmkvyofficial.org/">PMKVY</a></li>
+          <li><a href="http://agriculture.gov.in/">Ministry of Agriculture</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="search.jsp" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="" />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+
+        
+        <h2>Entry Rate List</h2>
+        <p>The Government Fixed Minimum Selling Price of Cereals</p>
+        <table style="width:100%; border-spacing:0;">
+          <tr><th>Item</th><th>Price per Kg</th></tr>
+          <tr><td>Wheat</td><td>Rs. 78</td></tr>
+          <tr><td>Rice</td><td>Rs. 53</td></tr>
+          <tr><td>Barley</td><td>Rs. 98</td></tr>
+          <tr><td>Pulses</td><td>Rs. 28</td></tr>
+          <tr><td>Sugarcane</td><td>Rs. 13</td></tr>
+          <tr><td>Corn</td><td>Rs. 67</td></tr>
+          <tr><td>Mint</td><td>Rs. 134</td></tr>
+          <tr><td>Green Leafy Vegetables</td><td>Rs. 30</td></tr>
+          <tr><td>Potato</td><td>Rs. 15</td></tr>
+          <tr><td>Onion</td><td>Rs. 12</td></tr>
+        </table>
+        <h2>Add Your Produce</h2>
+        <form action="crops.jsp" method="post">
+          <div class="form_settings">
+            <p><span>Name of the Produce</span><select id="id" name="name"><option value="Wheat">Wheat</option><option value="Rice">Rice</option><option value="Barley">Barley</option><option value="Pulses">Pulses</option><option value="Sugarcane">Sugarcane</option><option value="Corn">Corn</option><option value="Mint">Mint</option><option value="Vegetables">Vegetables</option><option value="Potato">Potato</option><option value="Onion">Onion</option></select></p>
+            <p><span>weight in Kgs</span><input type="text" name="sp"/></p>
+            <p><span>Description</span><textarea rows="8" cols="50" name="description"></textarea></p>
+            <p><span>Ready to Deliver Immediately</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="Click to Upload" /></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
