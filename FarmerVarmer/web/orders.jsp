@@ -12,7 +12,6 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
 </head>
-
 <body>
   <div id="main">
     <div id="header">
@@ -25,7 +24,6 @@
       </div>
       <div id="menubar">
         <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li><a href="profile.html">Home</a>></li>
           <li><a href="crop.html">Crops</a></li>
           <li><a hre="tools.html">Request a Tool</a></li>
@@ -91,18 +89,13 @@ th {
     "<th>Duration</th>"+
   "</tr>");
                 while(rs.next())
-                {
-                    
+                {       
                     out.println(""+
-
-
   "<tr>"+
     "<td>"+rs.getString(1)+"</td>"+
     "<td>"+rs.getString(3)+"</td>"+
     "<td>"+rs.getString(2)+"</td>"+
   "</tr>"+
-  
-
 "");
                 }
                 out.println("</table>");
@@ -126,29 +119,20 @@ th {
     "<th>Sold in Kgs</th>"+
   "</tr>");
                 while(rs.next())
-                {
-                    
+                {   
                     out.println(""+
-
-
   "<tr>"+
     "<td>"+rs.getString(1)+"</td>"+
     "<td>"+rs.getString(3)+"</td>"+
     "<td>"+rs.getString(2)+"</td>"+
   "</tr>"+
-  
-
 "");
                 }
                 out.println("</table>");
             }catch(Exception e){}
-
 %>    
-
-
       </div>
-    </div>
-    
+    </div>    
   </div>
 </body>
 </html>
